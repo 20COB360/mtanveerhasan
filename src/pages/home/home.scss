@@ -1,0 +1,122 @@
+.container-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.707);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: -13;
+
+    .details {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        @media screen and (max-width: 660px) {
+            flex-wrap: wrap; 
+            width: 100%;
+            padding: 2vw;
+        }
+
+        .my-img {
+            padding: .3vw;
+            z-index: 2;
+            border: .4vw solid brown;
+            border-radius: 50%;
+            width: 300px;
+            @media screen and (max-width: 850px) {
+                width: 250px;
+            }
+            @media screen and (max-width: 500px) {
+                width: 200px;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0.6;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .my-img img {
+            border-radius: 50%;
+        }
+
+        .bio {
+            animation: slidein 2s ease-in-out;
+            position: relative;
+            background-color: #141619b8;
+            padding: 2vw 4vw;
+            margin: 2vw;
+            color: white;
+            border-radius: inset 10px 10px;
+
+            h2 {
+                font-size: 1.25rem;
+                font-weight: lighter;
+            }
+            p{
+                font-weight: lighter;
+                margin: 0;
+                line-height: normal;
+            }
+            .green {
+                color: lawngreen;
+                font-size: 25px;
+            }
+
+            .orange {
+                color: orange;
+            }
+            @media screen and (max-width: 850px) {
+                h2{
+                    font-size: 1.1rem;
+                }
+                .green{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                h2,p{
+                    text-align: center;
+                }
+            }
+            @media screen and (max-width: 300px) {
+                h2{
+                    font-size: 1rem;
+                }
+                .green{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+
+        @keyframes slidein {
+            from {
+                right: 150px;
+                opacity: 0;
+            }
+
+            to {
+                right: 0px;
+                opacity: 1;
+            }
+        }
+    }
+}
+

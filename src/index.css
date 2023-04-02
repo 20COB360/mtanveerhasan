@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(./static-images/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
 }
 
 code {

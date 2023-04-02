@@ -1,0 +1,179 @@
+.project {
+    margin-top: 30px;
+    text-align: center;
+
+    .display {
+        display: grid !important;
+    }
+
+    .title {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .gallery-btn {
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: #111827;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #374151;
+            scale: 1.05;
+            transition: all .3s;
+        }
+    }
+
+    .gallery {
+        margin: 10px 0px;
+        display: none;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        padding: 10px;
+        background-color: rgb(98 96 96 / 89%);
+        animation: fadein .5s ease-in;
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        img {
+            width: 100%;
+            border: 2px solid gold;
+        }
+
+        .grid-column-span-3 {
+            grid-column: span 3;
+        }
+
+        .grid-column-span-2 {
+            grid-column: span 2;
+        }
+
+        .grid-row-span-2 {
+            grid-row: span 2;
+        }
+
+        .grid-row-span-3 {
+            grid-row: span 3;
+        }
+    }
+
+    .alpha {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+
+    .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0px;
+        padding: 10px;
+        gap: 3vw;
+        background-color: #4a4a4ad4;
+
+
+        .cover-img {
+            width: 700px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .wrapper {
+            padding: 2vw;
+            width: 600px;
+
+            .link {
+                a {
+                    color: lawngreen !important;
+                }
+            }
+
+            .description {
+                color: lavenderblush;
+                p{
+                    text-align: justify;
+                }
+
+                span {
+                    color: lime;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width : 900px) {
+        .details {
+            display: block;
+            text-align: center;
+            margin: auto;
+
+            .cover-img {
+                margin: auto;
+                width: 500px;
+            }
+
+            .wrapper {
+                margin: auto;
+                width: 80%;
+                .description{
+                    margin-top: 2vw;
+                    border-top: 2px solid gold;
+                    padding-top: 3vw
+                }
+            }
+        }
+    }
+
+    h2 {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.677);
+    }
+
+    .tech-used {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1vw;
+        margin: 10px 0px;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (max-width : 600px) {
+        margin-top: 70px;
+
+        .gallery {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .details {
+            padding: 3vw;
+
+            .cover-img {
+                margin: auto;
+                width: 100%;
+            }
+
+            .wrapper {
+                margin: auto;
+                width: 100%;
+            }
+        }
+    }
+
+}

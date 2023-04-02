@@ -1,0 +1,176 @@
+a {
+    text-decoration: none;
+}
+
+.container-fluid {
+    display: flex;
+    flex-wrap: nowrap !important;
+}
+
+.navbar {
+    display: none;
+    z-index: 100;
+}
+
+.nav-hor {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    box-sizing: border-box;
+    height: 45px;
+    z-index: 50;
+}
+
+.nav-hor a:hover {
+    border-bottom: .5vw solid #0088ff;
+    color: #0088ff;
+}
+
+.nav-hor a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: .5vw 1vw;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 25px;
+    // height: inherit;
+}
+
+.dropbtn a {
+    font-size: 25px;
+}
+
+.dropbtn:hover {
+    border-bottom: #0088ff;
+    color: #0088ff;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #202124;
+    min-width: 27vw;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+    a:hover {
+        border-bottom: .2vw solid #0088ff;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.image-box {
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+    background: url(../../static-images/wp4676576-4k-pc-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.profile-box {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.link-box {
+    width: 35px;
+    margin: 10px;
+}
+
+@media screen and (max-width:1100px) {
+    .nav-hor{
+        height: 30px;
+    }
+    .nav-hor a,
+    .dropbtn {
+        font-size: 15px;
+    }
+    .dropdown-content a{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .containerx {
+        margin-top: 80px;
+    }
+
+    .my-img {
+        width: 200px;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .nav-hor {
+        display: none;
+    }
+
+    .details {
+        width: 98vw;
+    }
+
+    .image-box {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .profile-box {
+        width: 45%;
+    }
+
+    .link-box {
+        display: inline-block;
+    }
+
+    .my-links {
+        display: flex;
+        justify-content: center;
+        width: 61%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+    }
+}

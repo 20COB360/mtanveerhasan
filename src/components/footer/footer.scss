@@ -1,0 +1,18 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #202124;
+}
+
+.footer-img:hover {
+    scale: 1.2;
+    border-bottom: 2px solid mediumslateblue;
+    padding-bottom: 2px;
+    transition: all .2s ease-in-out;
+}

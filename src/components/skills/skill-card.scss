@@ -1,0 +1,31 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    width: 250px;
+    background-color: #201f1f;
+    .card-img{
+        background-image: url(../../static-images/bg1.png);
+        background-size: contain;
+        height: 150px;
+        border-bottom: 2px solid lawngreen;
+        img{
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .card-title{
+        p{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: antiquewhite;
+        }
+    }
+    &:hover{
+        scale: 1.1;
+    }
+}
